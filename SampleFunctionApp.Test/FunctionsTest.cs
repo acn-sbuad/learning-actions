@@ -18,6 +18,14 @@ namespace SampleFunctionApp.Test
         }
 
         [Fact]
+        public async void HttpTriggerWithParams2()
+        {
+            var request = TestFactory.CreateHttpRequest("name", "Nancy");
+            var response = (OkObjectResult)await Function1.Run(request, logger);
+            Assert.Equal("Hello Bill! Welcome to Azure Functions!", response.Value);
+        }
+
+        [Fact]
         public async void HttpTriggerWithoutParams()
         {
             var request = TestFactory.CreateHttpRequest("", "");
