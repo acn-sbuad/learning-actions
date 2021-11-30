@@ -200,10 +200,14 @@ The workflow copied in step 2 is not valid. The action to use is missing.
 
 Find the correct action to insert from [Github Marketplace for Actions](https://github.com/marketplace?type=actions).
 
->:balloon: Hint: The action is published by `actions` and we are working on adding a `Label` to a pull request.
+>🎈 Hint: The action is published by `actions` and we are working on adding a `Label` to a pull request.
+
+### Step 4 - Commit and push your workflow to the repository
 
 
-### Step 4 - Create a PR to test the new workflow
+
+
+### Step 5 - Create a PR to test the new workflow
 
 In GitHub, navigate to `SampleFunctionApp.Test\FunctionsTest.cs`.
 
