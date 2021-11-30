@@ -26,5 +26,13 @@ namespace SampleFunctionApp.Test
             var response = (OkObjectResult)await Function1.Run(request, logger);
             Assert.Equal("Hello there! Welcome to Azure Functions!", response.Value);
         }
+        
+        [Fact]
+        public async void HttpTriggerWithoutParams()
+        {
+            var request = TestFactory.CreateHttpRequest("", "");
+            var response = (OkObjectResult)await Function1.Run(request, logger);
+            Assert.Equal("Hello there! Welcome to Azure Functions!", response.Value);
+        }
     }
 }
