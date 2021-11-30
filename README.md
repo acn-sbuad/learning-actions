@@ -164,7 +164,7 @@ each label.
 |area/development | Covers all changes under the `SimpleFunctionApp` directory  |
 --------
 
-**Can you think of another abel to add to the repository?**
+**Can you think of another label to add to the repository?**
 
 ### Step 2 - Set up a workflow for automatic labeling on PR
 
