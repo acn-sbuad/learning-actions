@@ -171,7 +171,7 @@ each label.
 In the `.github/workflows` folder create a new file and name it ``pr-labeler.yml`.
 Copy the code below into the file.
 
-```yml
+```
 name: Pull Request Labeler
 on: [pull_request_target]
 
@@ -203,7 +203,6 @@ Find the correct action to insert from [Github Marketplace for Actions](https://
 >🎈 Hint: The action is published by `actions` and we are working on adding a `Label` to a pull request.
 
 ### Step 4 - Commit and push your workflow to the repository
-
 
 
 
