@@ -184,14 +184,15 @@ jobs:
     - name: Labeler
       uses: [insert correct action]
       with:
-        repo-token: ${{ "{"{% secrets.GITHUB_TOKEN " }}%}}
+        repo-token: [ ${{ secrets.GITHUB_TOKEN  }} ]
 ```
 
 This defines an action that triggers on the event of a pull requests. 
 The key word `pull_request_target` differs from `pull_request` in that
 the workflow will run in the context of the base of the pull request, rather than the merge commit. 
 
-A single job `label` running on an `ubuntu-latest` runner defines a single step `Labeler` using a not yet defined action. The action is given access to a secret from the repository
+A single job `label` running on an `ubuntu-latest` runner defines a single step `Labeler` using a not yet defined action. The action is given access to a secret from the repository.
+
 
 ### Step 3 - Complete the workflow file
 
