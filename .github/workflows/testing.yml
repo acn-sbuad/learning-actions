@@ -26,7 +26,7 @@ jobs:
       run: dotnet build SampleFunctionApp.sln --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test SampleFunctionApp.Test/SampleFunctionApp.Test.csproj --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage
+      run: dotnet test SampleFunctionApp.Test/SampleFunctionApp.Test.csproj --configuration Release --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage
 
     - name: Copy Coverage To Predictable Location
       run: cp coverage/**/coverage.cobertura.xml coverage.cobertura.xml
