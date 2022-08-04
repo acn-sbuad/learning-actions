@@ -1,8 +1,8 @@
 area/test:
-  - 'SimpleFunctionApp.Test/*'
+  - SimpleFunctionApp.Test/*
 
 area/automation:
-  - '.github/**/*'
+  - .github/**/*
 
 area/development:
-  - 'SimpleFunctionApp/*'
+  - SimpleFunctionApp/*
