@@ -145,13 +145,13 @@ and copy the content below.
 
 ```yml
 area/test:
-  - 'SimpleFunctionApp.Test/*'
+- 'SimpleFunctionApp.Test/*'
 
 area/automation:
-  - '.github/**/*'
+- '.github/**/*'
 
 area/development:
-  - 'SimpleFunctionApp/*'
+- 'SimpleFunctionApp/*'
 ```
 
 The file defines three labels for the repository. Below you find a description of 
